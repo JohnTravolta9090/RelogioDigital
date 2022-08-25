@@ -1,0 +1,132 @@
+@font-face {
+    font-family: dsdigi;
+    src: url("./DS-DIGI.TTF");
+}
+
+
+*{
+    font-family: dsdigi, "sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #3c3c3c;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 5s ease-in-out 0s;
+}
+
+
+body:hover{
+    background-color: black;
+}
+/* vh altura em relação a tela da pessoa */
+
+.clock{
+    width: 700px;
+    height: 500px;
+
+    border-radius: 15px;
+
+    background-color: #1e1e1e;
+
+    border: 2px solid black;
+
+    padding: 1.75% 0px;
+}
+
+.monitor{
+    width: 90%;
+    height: 75%;
+
+    background-color: black;
+
+    margin: auto;
+
+    padding: 10px 0px;
+
+    position: relative;
+}
+
+.flag{
+    width: 45px;
+    height: 30px;
+
+    position: absolute;
+    /* top, left, bottm, right */
+    top: 8px;
+    left: 8px;
+    border: 0.8px solid gray;
+}
+
+.buttoms{
+    width: 90%;
+    height: 25%;
+    
+    margin: 10px auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttoms button{
+    font-size: 2rem;
+    min-height: 80px;
+    padding: 10px;
+    background-color: #C0C0C0;
+
+    transition: background-color 2s ease-in-out 0s;
+}
+
+
+
+/* :houver é a função de identifica que o mouse passou em cima do botão */
+
+.buttoms button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.time{
+    width: 90%;
+    height: 70%;
+
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 4rem;
+    letter-spacing: 1.2rem;
+
+    color: rgb(19, 191, 19);
+}
+
+.info{
+    width: 90%;
+    height: 30%;
+    
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: rgb(19, 191, 19);
+}
